@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snippet Cheatsheet</title>
+</head>
+<body>
+    <main>
+        <h1>CSS Snippet Cheatsheet</h1>
+            <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy</p>
+        
+        <section class="top-row">
+            <article>
+                <header class="flexbox-row">Flexbox-Row</header>
+                <p>Use these properties to create a flexbox row layout</p>
+                <p class="code">
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                </p>
+            </article>
+        
+            <article>
+                <header class="flexbox-column">Flexbox Column</header>
+                <p>Use this code to create a flexbox column layout</p>
+                <p class="code">
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                }
+                </p>
+            </article>
+       
+            <article class="css-grid-layout">
+                <p>Build a 12-column layout using CSS Grid</p>
+                <p class="code"> 
+                    .grid {
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns:
+                    repeat(12. 1fr):
+                    }
+                </p>
+            </article>
+        </section>
+       
+        <section class="bottom-row">
+            <article>
+            <header class="linear-gradient">Linear Gradient</header>
+                <p>This will create a background linear gradient from top to bottom</p>
+                <p class="code">
+                    .linear-gradient-background {
+                        background-image: linear-gradient(
+                            rgba(232, 102, 236, 0.3) 0%,
+                            rgba(232, 102, 236, 0.6) 100%
+                        );
+                    }
+                </p>
+            </article>
+
+            <article>
+            <header class="box-transition-glow">Box Transition Glow</header>
+                <p></p>
+            </article>
+    
+    </main>
+</body>
+</html>
