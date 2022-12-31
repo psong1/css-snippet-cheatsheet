@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>CSS Snippet Cheatsheet</title>
 </head>
 <body>
     <main>
         <h1>CSS Snippet Cheatsheet</h1>
-            <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy</p>
+            <p class="main-header">Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
         
-        <section class="top-row">
+        <section class="grid">
+            <div class="row">
             <article>
-                <header class="flexbox-row">Flexbox-Row</header>
+                <header class="card-header">Flexbox-Row</header>
                 <p>Use these properties to create a flexbox row layout</p>
                 <p class="code">
                     .row {
@@ -25,7 +28,7 @@
             </article>
         
             <article>
-                <header class="flexbox-column">Flexbox Column</header>
+                <header class="card-header">Flexbox Column</header>
                 <p>Use this code to create a flexbox column layout</p>
                 <p class="code">
                 .column {
@@ -35,7 +38,8 @@
                 </p>
             </article>
        
-            <article class="css-grid-layout">
+            <article>
+            <header class="card-header">CSS Grid Layout</header>
                 <p>Build a 12-column layout using CSS Grid</p>
                 <p class="code"> 
                     .grid {
@@ -46,11 +50,9 @@
                     }
                 </p>
             </article>
-        </section>
-       
-        <section class="bottom-row">
+
             <article>
-            <header class="linear-gradient">Linear Gradient</header>
+            <header class="card-header">Linear Gradient</header>
                 <p>This will create a background linear gradient from top to bottom</p>
                 <p class="code">
                     .linear-gradient-background {
@@ -63,10 +65,39 @@
             </article>
 
             <article>
-            <header class="box-transition-glow">Box Transition Glow</header>
-                <p></p>
+            <header class="card-header">Box Transition Glow</header>
+                <p>Use transition and box shadows to glow on hover</p>
+                <p class="code">
+                    .code-card .card-header {
+                        border-radius: 8px;
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                    .code-card:hover,
+                    .code-card:hover .card-header {
+                        box-shadow: inset 0px 0px 8px
+                    rgba(232, 102, 236, 1), 0 0 15px
+                    rgba(232, 102, 236, 1);
+                    }
+                </p>
             </article>
-    
+
+            <article>
+            <header class="card-header">Overlay Card with Title</header>
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                <p class="code">
+                    .card-header {
+                        position: relative;
+                        margin-top: -20px;
+                    }
+                </p>
+            </article>
+        </div>
+        
+        </section>
     </main>
 </body>
+
+<footer>Made with ❤️ and CSS</footer>
+
 </html>

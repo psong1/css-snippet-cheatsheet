@@ -1,0 +1,63 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: #d400ff;
+}
+
+.main-header {
+    font-size: 14px;
+    text-align: center;
+}
+
+header{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #d400ff;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+repeat(6. 1fr);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article {
+    top: 50%;
+    left: 50%;
+    margin: 30px 5px;
+    padding: 5px;
+    border: 1px dashed #d400ff;
+    border-radius: 5px;
+    height: 350px;
+    width: 350px;
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%);
+}
+
+.code {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ff00cc;
+    word-wrap: break-word; 
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+    font-weight: bold;
+    overflow: hidden;
+}
